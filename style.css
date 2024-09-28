@@ -1,90 +1,126 @@
-body{
-    /* background-image: url(background_img.jpeg); */
-    background-color: black;
-    background-size: cover;
-    color: whitesmoke;
-    margin: 2rem 1rem 1rem 1rem;
-    position: sticky;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', 'sans-serifz';
 }
-a{
-    text-decoration: none;
-    color: unset;
+
+body {
+    color: #ededed;
 }
-.full-navbar{
+
+/*header*/
+.header {
     position: fixed;
-    top: 2rem;
-    padding-left: 25rem;
-}
-.navbar{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
     display: flex;
-    justify-content: end;
-    font-size: 1.3rem;
-    font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
-#in-nav{
-    margin: 0 1.5rem 0 1.5rem;
-    cursor: pointer;
+.logo { /*portfolio*/
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
 }
-#in-nav:hover{
-    color:  rgb(22, 123, 145);
+.navbar a { /*home,academics,achievements,contact*/
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 35px;
+    transition: .3s;
 }
-/* .scroll{
-    margin-right: 5rem;
-    width: 0; 
-    border-left: 2rem solid transparent;
-    border-right: 2rem solid transparent;
-    border-bottom: 2rem solid rgb(22, 123, 145);
+.navbar a:hover {
+    color: rgb(54, 144, 209);
+}
+
+/*Home*/
+.home {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(background1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+.home-content h2 { /*i'm*/
+    font-size: 45px;
+    font-weight: 700;
+}
+.home-content h1 { /*Hello*/
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+}
+#name { /*vatsal chandrani*/
+    font-size: 63px;
+    font-weight: 700;
+    margin: -3px 0;    
+}
+.home-icon a { /*icons*/
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid rgb(54, 144, 209);
     border-radius: 50%;
-    animation: spin 1s ease-in-out  0s infinite normal;
-} */
-
-
-/* index page */
-.pic{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 8rem;
+    font-size: 20px;
+    color: rgb(54, 144, 209);
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
 }
-#hello{
-    font-size: 5rem;
-    font-weight: bolder;
-    color: rgb(22, 123, 145);
+.home-icon a:hover {
+    background: rgb(54, 144, 209);;
+    color: #081b29;
+    box-shadow: 0 0 20px rgb(54, 144, 209);
 }
-#im{
-    font-size: 4rem;
-    font-weight: bold;
-    color: white;
+.btn-box { /*More About Me*/
+    display: inline-flex;
+    padding: 12px 20px;
+    background: rgb(54, 144, 209);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
 }
-#vc{
-    font-size: 4.5rem;
-    font-weight: bold;
-    color: white;
+.btn-box:hover {
+    box-shadow: 0 0 5px rgb(54, 144, 209), 
+    0 0 5px rgb(54, 144, 209), 0 0 5px rgb(54, 144, 209), 
+    0 0 5px rgb(54, 144, 209), 0 0 5px rgb(54, 144, 209);   
 }
-.image{
-    height: 18rem;
-    width: 18em;
+.image{ /*photo*/
+    height: 20rem;
+    width: 20em;
     display: flex;
     justify-content: center;  
     border-radius: 50%;
     background-image: url(image.jpg);
     background-size: cover;
-    border: 3.5px solid  rgb(22, 123, 145);
+    border: 3.5px solid  rgb(54, 144, 209);
+}
+.image:hover {
+    box-shadow: 0 0 5px rgb(54, 144, 209), 
+    0 0 5px rgb(54, 144, 209), 0 0 5px rgb(54, 144, 209), 
+    0 0 5px rgb(54, 144, 209), 0 0 5px rgb(54, 144, 209);   
 }
 
+/*About*/
+/* .imageINabout {
 
-/* academics page */
-.aca-container{
-    margin-top: 8rem;
-    padding-top: 2rem;
-}
-.aca-content{
-    display: flex;
-    justify-content: space-evenly;
-}
-.degree{
-    margin: 2rem 0 1rem 0;
-    font-size: 2rem;
-}
-.description{
-    font-size: 1.1rem;
-}
+} */
